@@ -50,7 +50,7 @@ class App:
         path_target = ""  # 파일 존재를 확인할 경로
         self.check_table(path_table, path_target, "I", 5)   # I열 5행부터 I열 탐색
 
-    #
+    # 파일 직접 선택해 확인
     def check_test(self):
         self.path = filedialog.askopenfilename()
         print(self.path)
@@ -63,7 +63,7 @@ class App:
         last_row = sheet.range('A1').current_region.last_cell.row
         # print(f"행 개수: {last_row}")
         for row in range(1, last_row + 1):
-            cell_value = sheet.range(f"A{row}").value  # 특정 셀의 값을 가져옴
+            cell_value = sheet.range(f"A{row}").value  # A{row} 셀값을 저장
             if cell_value is not None and cell_value != "":
                 cell_value = str(cell_value)
                 for root, dirs, files in os.walk(resource):
