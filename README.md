@@ -7,7 +7,8 @@
 
 path_table = ""  # 엑셀 데이터파일 경로
 path_target = ""  # 파일 존재를 확인할 경로
-self.check_table(path_table, path_target, "N", 5)   # N열 5행부터 N열 탐색, 찾으려는 범위에 맞게 변경
+# N열 5행부터 N열 탐색, 찾으려는 범위에 맞게 변경
+self.check_table(path_table, path_target, "N", 5)
 
 실행 예시
 
